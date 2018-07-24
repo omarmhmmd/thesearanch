@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <Fog></Fog>
-    <router-view/>
+    <Home></Home>
+    <bgVid></bgVid>
+    <!-- <router-view/> -->
   </div>
 </template>
 
 <script>
-import Fog from '@/components/Fog'
+import Home from '@/components/Home'
+import bgVid from '@/components/bgVid'
 
 export default {
   name: 'App',
   components: {
-    Fog
+    Home,
+    bgVid
   }
 }
 </script>

@@ -1,5 +1,7 @@
 <template>
-    <video :src="video" autoplay loop> </video>
+  <video autoplay loop muted>
+    <source :src="video" type="video/mp4">
+  </video>
 </template>
 
 <script>
@@ -15,5 +17,6 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 
 </style>
