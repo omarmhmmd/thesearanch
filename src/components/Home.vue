@@ -22,28 +22,30 @@
       }
     },
     mounted () {
+      var temp = this;
       axios.get('https://api.wunderground.com/api/89c63e6a34bf4afb/geolookup/conditions/q/zmw:95497.1.99999.json')
         .then(response => {
-          this.weather = response.data.current_observation.temp_f;
-          console.log("weather " + this.weather);
-          temp = this.weather;
-          this.readTemp(temp);
+          temp.weather = response.data.current_observation.temp_f;
+          console.log("weather " + temp.weather);
+          var tempOpacity = temp.weather;
+          temp.readTemp(tempOpacity);
         })
 
-      // var temp = this;
       // setInterval(function(){
       //   axios.get('https://api.wunderground.com/api/89c63e6a34bf4afb/geolookup/conditions/q/zmw:95497.1.99999.json')
       //     .then(response => {
       //       temp.weather = response.data.current_observation.temp_f;
-      //       console.log(temp.weather);
+      //       console.log("weather " + temp.weather);
+      //       var tempOpacity = temp.weather;
+      //       temp.readTemp(tempOpacity);
       //     })
-      //  }, 10000);
+      //  }, 500000);
     },
     methods: {
-      readTemp(temp) {
-        console.log("temp from function " + temp);
-        temp = temp / 100;
-        this.fogUpdate.background = 'rgba(122, 115, 107,' + temp + ')';
+      readTemp(tempOpacity) {
+        console.log("temp from function " + tempOpacity);
+        tempOpacity = tempOpacity / 100;
+        this.fogUpdate.background = 'rgba(122, 115, 107,' + tempOpacity + ')';
       }
     }
   }
