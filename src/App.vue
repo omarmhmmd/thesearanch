@@ -20,7 +20,8 @@ export default {
 </script>
 
 <style>
-  @import './assets/css/normalize.css';
+  /* @import './assets/css/normalize.css'; */
+  @import './assets/css/reset.css';
 
   html {
     overflow: hidden;
@@ -30,4 +31,10 @@ export default {
     font-family: Helvetica, Arial, sans-serif;
     color: #000000;
   }
+
+  @font-face {
+    font-family: helvetica75;
+    src: url('./assets/fonts/helvetica75.otf');
+  }
+
 </style>

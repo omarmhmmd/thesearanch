@@ -1,6 +1,6 @@
 <template>
   <video autoplay loop muted>
-    <source :src="video" type="video/mp4">
+    <source :src=video type="video/mp4">
   </video>
 </template>
 
