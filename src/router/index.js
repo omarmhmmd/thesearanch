@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import bgVid from '@/components/bgVid'
+import Home from '@/components/Home'
+import Video from '@/components/Video'
 
 Vue.use(Router)
 
@@ -9,8 +10,14 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'bgVid',
-      component: bgVid
-    }
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/',
+      name: 'Video',
+      component: Video
+    },
+
   ],
 })
