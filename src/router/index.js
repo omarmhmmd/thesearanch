@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Video from '@/components/Video'
+import Buildings from '@/components/Buildings'
+import Exhibition from '@/components/Exhibition'
 
 Vue.use(Router)
 
@@ -14,10 +16,14 @@ export default new Router({
       component: Home
     },
     {
-      path: '/',
-      name: 'Video',
-      component: Video
+      path: '/Buildings',
+      name: 'Buildings',
+      component: Buildings
     },
-
+    {
+      path: '/Exhibition',
+      name: 'Exhibition',
+      component: Exhibition
+    },
   ],
 })
