@@ -1,6 +1,3 @@
-<<!-- =================================================
- Vue Template
-================================================== -->
 <template>
   <div @click="toggle()">
     <div>
@@ -15,9 +12,6 @@
   </div>
 </template>
 
-<!-- =================================================
- Vue Script
-================================================== -->
 <script>
 export default {
   name: 'svg-button',
@@ -36,23 +30,20 @@ export default {
   methods: {
     toggle () {
       this.isActive = !this.isActive
-        if (this.isActive) {
-          this.soundOn = '/static/button/' + 'soundOff.svg'
-        }
-        else {
-          this.soundOn = '/static/button/' + 'soundOn.svg'
-        }
-      },
-    svgReady () {
-      console.log('svg is ready!!')
+      if (this.isActive) {
+        this.soundOn = '/static/button/' + 'soundOff.svg'
+      }
+      else {
+        this.soundOn = '/static/button/' + 'soundOn.svg'
+      }
+    },
+    svgReady() {
+      console.log("svg ready")
     }
   }
 }
 </script>
 
-<!-- =================================================
- Vue Style
-================================================== -->
 <style scoped>
 
 </style>

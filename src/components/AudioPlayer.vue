@@ -34,22 +34,13 @@
 
   button {
     position: relative;
-    bottom: 37px;
+    bottom: 38px;
     left: 215px;
     background: none;
     border: none;
     cursor: pointer;
   }
 
-  button {
-    width: 22px;
-    height: 19px;
-  }
-
   button:focus {outline:0;}
 
-  button svg {
-    width: 22px;
-    height: 19px;
-  }
 </style>

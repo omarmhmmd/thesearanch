@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Video from '@/components/Video'
 import Buildings from '@/components/Buildings'
 import Exhibition from '@/components/Exhibition'
 
