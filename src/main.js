@@ -6,6 +6,9 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+import VueSimpleSVG from 'vue-simple-svg'
+Vue.use(VueSimpleSVG)
+
 new Vue({
   el: '#app',
   router,
