@@ -65,7 +65,7 @@ export default {
   },
   methods: {
     readTemp(tempOpacity) {
-      tempOpacity = tempOpacity / 100;
+      tempOpacity = (tempOpacity / -100) + 1.375;
       this.fogUpdate.background = 'rgba(122, 115, 107,' + tempOpacity + ')';
       console.log("temp from function should update bg " + tempOpacity);
     },
