@@ -1,4 +1,5 @@
 <template>
+  <div id="container">
     <div id="routerLinks">
       <router-link class = "routerLink" to="/">TheSeaRanch</router-link>
       <br>
@@ -6,21 +7,45 @@
       <br>
       <router-link class = "routerLink" to="/Exhibition">TheExhibition</router-link>
     </div>
+  </div>
 </template>
 
 <script>
   export default {
-    name: 'Home'
+    name: 'Home',
+    data () {
+      return {
+        click: false
+      }
+    },
+    methods: {
+
+    }
   }
 </script>
 
 <style scoped>
+  p {
+    display: inline;
+    cursor: pointer;
+  }
+
+  #container {
+    z-index: 10;
+  }
+
+  #form {
+    position: absolute;
+    z-index: 10;
+    left: 515px;
+  }
+
   #routerLinks {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
+    z-index: 11;
   }
 
   .routerLink {

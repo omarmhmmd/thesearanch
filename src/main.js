@@ -9,6 +9,9 @@ Vue.config.productionTip = false
 import VueSimpleSVG from 'vue-simple-svg'
 Vue.use(VueSimpleSVG)
 
+import VueAnime from 'vue-animejs';
+Vue.use(VueAnime)
+
 new Vue({
   el: '#app',
   router,

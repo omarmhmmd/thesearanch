@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "vue": "^2.5.2",
+    "vue-animejs": "^1.0.1",
     "vue-audio": "0.0.11",
     "vue-axios": "^2.1.2",
     "vue-howler": "^0.7.0",

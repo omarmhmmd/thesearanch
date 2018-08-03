@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div id="container">
     <router-link class = "routerLink" to="/">TheSeaRanch</router-link>
     <div id="buildingMap">
       <div id="buildingIcon" ref="buildingIcon">
@@ -127,6 +127,20 @@
 </script>
 
 <style scoped>
+  @keyframes example {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 100px;
+    }
+  }
+
+  #container {
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
   .routerLink {
     position: absolute;
     font-family: helvetica75;
