@@ -1,6 +1,7 @@
 <template>
   <div id="container">
     <div id="routerLinks">
+      <!-- <h1>current: {{$mq}}</h1> -->
       <router-link class = "routerLink" to="/">TheSeaRanch</router-link>
       <br>
       <router-link class = "routerLink" to="/Buildings">TheBuildings</router-link>
@@ -24,7 +25,8 @@
   }
 </script>
 
-<style scoped>
+<style lang = 'scss' scoped>
+
   p {
     display: inline;
     cursor: pointer;
@@ -32,12 +34,6 @@
 
   #container {
     z-index: 10;
-  }
-
-  #form {
-    position: absolute;
-    z-index: 10;
-    left: 515px;
   }
 
   #routerLinks {
@@ -58,5 +54,26 @@
 
   .routerLink:hover {
     text-decoration: underline;
+  }
+</style>
+
+<!-- MEDIA QUERY -->
+<style lang = 'scss' scoped>
+
+  $small: 576px;
+  $medium: 768px;
+  $large: 992px;
+  $largeplus: 1024px;
+
+  @media screen and (max-width: $small) {
+
+  }
+
+  @media screen and (max-width: $medium) {
+
+  }
+
+  @media screen and (min-width: $large) {
+
   }
 </style>

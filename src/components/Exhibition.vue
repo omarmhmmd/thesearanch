@@ -20,18 +20,18 @@
       </span>
       <img src="static/images/exhibition/map001.png" alt="">
       <div id = "description">
-          <br>
-          Distinctive architecture, uninhibited ocean views, bold supergraphics, shared open space, and meditative tranquility—these were the beginnings of the Sea Ranch, a beacon
-          of Modernism on the Northern California coast. Designed by a small group of Bay Area architects and designers in the early 1960s, the development was envisioned as a progressive, inclusive community, guided by the idealistic principles of good design,
-          economy of space, and harmony with the natural environment.
-          <br>
-          <br>
-          This exhibition brings together original sketches and drawings from the project's designers, along with archival images, photographs of the Sea Ranch today, and a full-scale architectural
-          replica. The environmentally attentive design philosophies explored at the Sea Ranch, along with the now-iconic graphics, resonated globally and continue to influence architecture and design today.
-          <br>
-          <br>
-          <a target="_blank" href="https://www.sfmoma.org/exhibition/donald-judd-specific-furniture/">Get Tickets Here</a>
-      </div>
+        <br>
+        Distinctive architecture, uninhibited ocean views, bold supergraphics, shared open space, and meditative tranquility—these were the beginnings of the Sea Ranch, a beacon
+        of Modernism on the Northern California coast. Designed by a small group of Bay Area architects and designers in the early 1960s, the development was envisioned as a progressive, inclusive community, guided by the idealistic principles of good design,
+        economy of space, and harmony with the natural environment.
+        <br>
+        <br>
+        This exhibition brings together original sketches and drawings from the project's designers, along with archival images, photographs of the Sea Ranch today, and a full-scale architectural
+        replica. The environmentally attentive design philosophies explored at the Sea Ranch, along with the now-iconic graphics, resonated globally and continue to influence architecture and design today.
+        <br>
+        <br>
+        <a target="_blank" href="https://www.sfmoma.org/exhibition/donald-judd-specific-furniture/">Get Tickets Here</a>
+    </div>
     </p>
   </div>
 </div>

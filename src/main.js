@@ -9,6 +9,15 @@ Vue.config.productionTip = false
 import VueSimpleSVG from 'vue-simple-svg'
 Vue.use(VueSimpleSVG)
 
+import VueMq from 'vue-mq'
+Vue.use(VueMq, {
+  breakpoints: {
+    small: 576,
+    medium: 768,
+    large: 992,
+  }
+})
+
 import VueAnime from 'vue-animejs';
 Vue.use(VueAnime)
 
