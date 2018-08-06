@@ -1,7 +1,9 @@
 <template>
-  <button @click="toggleMute">
-    <SvgButton />
-  </button>
+  <div class="audioButton">
+    <button @click="toggleMute">
+      <SvgButton id = "soundButton"/>
+    </button>
+  </div>
 </template>
 
 <script>
@@ -34,11 +36,16 @@
 
   button {
     position: relative;
-    bottom: 38px;
-    left: 215px;
     background: none;
     border: none;
     cursor: pointer;
+  }
+
+  #audioButton {
+    position: relative;
+  }
+
+  #soundButton {
   }
 
   button:focus {outline:0;}

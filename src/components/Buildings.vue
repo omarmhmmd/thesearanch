@@ -58,7 +58,7 @@
         mapStyle: {
           fill: 'none',
           stroke: 'white',
-          strokeWidth: '2'
+          strokeWidth: '1.75'
         }
       }
     },

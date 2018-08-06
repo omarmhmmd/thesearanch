@@ -1,7 +1,6 @@
 <template>
   <div id="container">
     <div id="routerLinks">
-      <!-- <h1>current: {{$mq}}</h1> -->
       <router-link class = "routerLink" to="/">TheSeaRanch</router-link>
       <br>
       <router-link class = "routerLink" to="/Buildings">TheBuildings</router-link>
@@ -18,6 +17,9 @@
       return {
         click: false
       }
+    },
+    mounted() {
+
     },
     methods: {
 
@@ -47,9 +49,8 @@
   .routerLink {
     font-family: helvetica75;
     color: white;
-    font-size: 3em;
+    font-size: 3vw;
     text-decoration: none;
-    font-size: 40px;
   }
 
   .routerLink:hover {

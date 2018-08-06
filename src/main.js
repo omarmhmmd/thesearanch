@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import VideoBg from 'vue-videobg'
+Vue.component('video-bg', VideoBg)
+
 Vue.config.productionTip = false
 
 import VueSimpleSVG from 'vue-simple-svg'
@@ -17,6 +20,10 @@ Vue.use(VueMq, {
     large: 992,
   }
 })
+
+import 'vue-resize/dist/vue-resize.css'
+import VueResize from 'vue-resize'
+Vue.use(VueResize)
 
 import VueAnime from 'vue-animejs';
 Vue.use(VueAnime)
