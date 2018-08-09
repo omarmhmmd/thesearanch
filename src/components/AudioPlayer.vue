@@ -36,13 +36,15 @@
 
   button {
     position: relative;
+    left: 110%;
+    bottom: 1.5vw;
     background: none;
     border: none;
     cursor: pointer;
   }
 
   #audioButton {
-    position: relative;
+
   }
 
   #soundButton {

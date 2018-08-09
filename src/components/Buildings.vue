@@ -160,24 +160,32 @@
   }
 
   #container {
-    animation-name: example;
-    animation-duration: 4s;
+  
   }
 
   .routerLink {
     position: absolute;
-    font-family: helvetica75;
+    font-family: Helvetica;
+    font-weight: bold;
     color: white;
-    font-size: 3em;
+    font-size: 3vw;
     text-decoration: none;
-    font-size: 40px;
     z-index: 10;
-    left: 950px;
-    top: 50px;
+    left: 75%;
+    top: 7.5%;
   }
 
   .routerLink:hover {
     text-decoration: underline;
+  }
+
+  #buildingMap {
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
   }
 
   #buildingIcon {
@@ -185,16 +193,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display:none;
-  }
-
-  #buildingMap {
-    width: 1000px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
   }
 
 </style>

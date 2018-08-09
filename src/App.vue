@@ -4,7 +4,7 @@
     <div id="fog" :style="fogUpdate"></div>
     <Video id = "videoBG"></Video>
     <div id="location">
-      <p>{{ weather }}° | {{ geoLocation }}</p>
+      {{ weather }}° | {{ geoLocation }}
       <AudioPlayer id = "soundButton" :sources="audioSources" :loop="true" :autoplay="false"></AudioPlayer>
     </div>
     <a target="_blank" href="https://www.sfmoma.org/">
@@ -80,9 +80,6 @@ export default {
 }
 
 #soundButton {
-  position: absolute;
-  left:17.5%;
-  top:28%;
 }
 
 #fog {
@@ -104,11 +101,12 @@ export default {
 
 #location {
   font-family: Helvetica;
+  display: block;
   font-weight: bold;
   color: white;
   font-size: 1.325vw;
   position: absolute;
-  width: 100%;
+  display: inline;
   left: 75%;
   top: 90%;
   z-index: 10;
