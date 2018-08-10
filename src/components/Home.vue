@@ -1,6 +1,7 @@
 <template>
   <div id="container">
     <div id="routerLinks">
+      <br>
       <router-link class = "routerLink" to="/">TheSeaRanch</router-link>
       <br>
       <router-link class = "routerLink" to="/Buildings">TheBuildings</router-link>
@@ -68,7 +69,9 @@
   $largeplus: 1024px;
 
   @media screen and (max-width: $small) {
-
+    .routerLink {
+      font-size: 8vw;
+    }
   }
 
   @media screen and (max-width: $medium) {

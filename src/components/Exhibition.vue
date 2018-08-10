@@ -7,13 +7,11 @@
     <br>
     <router-link class="routerLink" to="/Exhibition">TheExhibition</router-link>
   </div>
-  <div id="exhibitionTxt">
-    <p>
+  <div id="exhibitionBG">
+    <div id="exhibitionTXT">
       <span id = "exhibitionTxtHead">
-        TheSeaRanch
-        <br>
+        <p>TheSeaRanch</p>
         Architecture, Environment, and Idealism
-        <br>
         <span id = "exhibitionTxtDate">
           December 22, 2018–April 29, 2019
         </span>
@@ -27,13 +25,12 @@
         <br>
         This exhibition brings together original sketches and drawings from the project's designers, along with archival images, photographs of the Sea Ranch today, and a full-scale architectural
         replica. The environmentally attentive design philosophies explored at the Sea Ranch, along with the now-iconic graphics, resonated globally and continue to influence architecture and design today.
-        <br>
-        <br>
+
         <br>
         <br>
         <a target="_blank" href="https://www.sfmoma.org/exhibition/donald-judd-specific-furniture/">Get Tickets Here</a>
+      </div>
     </div>
-    </p>
   </div>
 </div>
 </template>
@@ -49,32 +46,18 @@ export default {
       click: false
     }
   },
-  mounted() {
-    // this.moveLeft();
-    // this.moveLeftTxt();
-  },
   methods: {
-    // moveLeft() {
-    //   this.$anime({
-    //     targets: '#routerLinks',
-    //     left: '300px',
-    //     duration: 1500,
-    //     easing: 'easeInOutQuad'
-    //   })
-    // },
-    // moveLeftTxt() {
-    //   this.$anime({
-    //     targets: '#exhibitionTxt',
-    //     left: '950px',
-    //     duration: 2000,
-    //     easing: 'easeInOutQuad'
-    //   })
-    // }
+
   }
 }
 </script>
 
 <style scoped>
+
+  p {
+    margin-top: 0; margin-bottom: 0.5vw;
+  }
+
   #container {
     z-index: 10;
   }
@@ -99,7 +82,7 @@ export default {
     text-decoration: underline;
   }
 
-  #exhibitionTxt {
+  #exhibitionBG {
     height: 100%;
     line-height: 1.5vw;
     padding-left: 4vw;
@@ -114,6 +97,13 @@ export default {
     z-index: 10;
   }
 
+  #exhibitionTXT {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   #exhibitionTxtHead {
     font-weight: bold;
     font-size: 2vw;
@@ -124,27 +114,24 @@ export default {
     font-size: 1.5vw;
   }
 
-  #exhibitionTxt img {
+  #exhibitionBG img {
     width: 70%;
     margin-top: 2.75%;
-  }
-
-  #exhibitionTxt p {
-    padding-top: 5%;
   }
 
   #description {
     width: 42.5vw;
     font-size: 1.175vw;
+    padding-top: 2%;
   }
 
-  #exhibitionTxt a {
+  #exhibitionBG a {
     font-weight: bold;
     text-decoration: none;
     color:white
   }
 
-  #exhibitionTxt a:hover {
+  #exhibitionBG a:hover {
     text-decoration: underline;
   }
 </style>
