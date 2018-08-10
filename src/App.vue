@@ -79,9 +79,6 @@ export default {
   z-index: -1;
 }
 
-#soundButton {
-}
-
 #fog {
   position: fixed;
   padding: 0;
@@ -95,7 +92,7 @@ export default {
 #sfmoma {
   position: absolute;
   width: 8.5%;
-  left: 5%;
+  left: 3.5%;
   top: 90%;
 }
 
@@ -108,7 +105,7 @@ export default {
   position: absolute;
   display: inline;
   left: 75%;
-  top: 90%;
+  top: 92.5%;
   z-index: 10;
 }
 

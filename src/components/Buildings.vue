@@ -150,17 +150,8 @@
 </script>
 
 <style scoped>
-  @keyframes example {
-    from {
-      left: 0px;
-    }
-    to {
-      left: 100px;
-    }
-  }
-
   #container {
-  
+
   }
 
   .routerLink {

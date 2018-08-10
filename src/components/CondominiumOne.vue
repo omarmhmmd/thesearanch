@@ -3,18 +3,20 @@
     <router-link class = "routerLink" to="/">TheSeaRanch</router-link>
     <div id="backIcon">
       <router-link to="/Buildings">
-        <simple-svg id="backIcon" :filepath="image" :width="svgWidth" :height="svgHeight"></simple-svg>
+        <simple-svg id="backIcon" :filepath="image"></simple-svg>
       </router-link>
     </div>
-    <h1>Condominium One</h1>
-    <div id="buildingIcon" ref="buildingIcon">
-      <simple-svg :filepath="buildingImage" :width="buildingWidth" :height="buildingHeight"></simple-svg>
-    </div>
-    <p id = "buildingText" v-html="buildingTxt"> {{buildingTxt}}</p>
-    <div id="imgContainer">
-      <img :style = "imageStyle" ref = 'one' @mouseover = "indexUp('one')" @mouseout = "indexDown('one')" id = "one" src="static/images/condoOne/001.png" alt="">
-      <img :style = "imageStyle" ref = 'two' @mouseover = "indexUp('two')" @mouseout = "indexDown('two')" id = "two" src="static/images/condoOne/002.png" alt="">
-      <img :style = "imageStyle" ref = 'three' @mouseover = "indexUp('three')" @mouseout = "indexDown('three')" id = "three" src="static/images/condoOne/002.png" alt="">
+    <div id="content">
+      <h1>Condominium One</h1>
+      <div id="buildingIcon" ref="buildingIcon">
+        <simple-svg :filepath="buildingImage" :width="buildingWidth" :height="buildingHeight"></simple-svg>
+      </div>
+      <p id = "buildingText" v-html="buildingTxt"> {{buildingTxt}}</p>
+      <div id="imgContainer">
+        <img :style = "imageStyle" ref = 'one' @mouseover = "indexUp('one')" @mouseout = "indexDown('one')" id = "one" src="static/images/condoOne/001.png" alt="">
+        <img :style = "imageStyle" ref = 'two' @mouseover = "indexUp('two')" @mouseout = "indexDown('two')" id = "two" src="static/images/condoOne/002.png" alt="">
+        <img :style = "imageStyle" ref = 'three' @mouseover = "indexUp('three')" @mouseout = "indexDown('three')" id = "three" src="static/images/condoOne/002.png" alt="">
+      </div>
     </div>
   </div>
 </template>
@@ -27,10 +29,6 @@
         image: '/static/button/back.svg',
         buildingImage: '/static/buildings/condoOne.svg',
         buildingTxt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        svgWidth: '40px',
-        svgHeight: '40px',
-        buildingWidth: '350px',
-        buildingHeight: '200px',
         imageStyle : {
           zIndex: ''
         },
@@ -69,22 +67,20 @@
   }
 </script>
 
-<style scoped>
-  #buildingPage {
-    position: absolute;
-    z-index: 10;
-  }
+<style lang = 'scss' scoped>
+
+  $left: 3.5%;
 
   .routerLink {
     position: absolute;
-    font-family: helvetica75;
+    font-family: Helvetica;
+    font-weight: bold;
     color: white;
-    font-size: 3em;
+    font-size: 3vw;
     text-decoration: none;
-    font-size: 40px;
     z-index: 10;
-    left: 950px;
-    top: 50px;
+    left: 75%;
+    top: 7.5%;
   }
 
   .routerLink:hover {
@@ -92,9 +88,11 @@
   }
 
   #backIcon {
+    width: 3.25vw;
+    height: auto;
     position: absolute;
-    top: 45px;
-    left: 43px;
+    top: 7.5%;
+    left: $left;
     z-index: 10;
   }
 
@@ -103,55 +101,63 @@
     left: 35px;
   }
 
+  #content {
+    z-index: 11;
+  }
+
   h1 {
-    position: relative;
-    width: auto;
+    position: absolute;
     color: white;
-    font-size: 75px;
-    top: 65px;
-    left: 43px;
+    font-size: 5.75vw;
+    top: 9.25%;
+    left:$left;
     z-index: 100;
   }
 
   #buildingIcon {
-    position: relative;
-    left: 43px;
+    width: 27.5vw;
+    height: auto;
+    position: absolute;
+    top:30%;
+    left: $left;
+    z-index: 10;
   }
 
   #buildingText {
+    z-index: 10;
     position: absolute;
     color: white;
-    width: 400px;
-    line-height: 18px;
-    left: 43px;
-    top:325px;
-    font-size: 15px;
+    width: 32.5%;
+    line-height: 1.4vw;
+    left: $left;
+    top:47.5%;
+    font-size: 1.15vw;
   }
 
   #imgContainer {
+    z-index: 10;
     position: absolute;
     background-color: none;
-    left: 400px;
-    top: 275px;
+    left: 30.5%;
+    top: 40%;
   }
 
   img {
     position: absolute;
-    width: 525px;
+    width: 42.5vw;
   }
 
   #one {
-    left: 300px;
+    left: 21.5vw;
   }
 
   #two {
-    left:200px;
-    bottom: -200px;
+    left: 15vw;
+    top: -5vw;
   }
 
   #three {
-    left: 100px;
-    bottom: -300px;
+    left: 10vw;
   }
 
 </style>

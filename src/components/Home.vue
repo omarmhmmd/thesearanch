@@ -47,7 +47,8 @@
   }
 
   .routerLink {
-    font-family: helvetica75;
+    font-family: Helvetica;
+    font-weight: bold;
     color: white;
     font-size: 3vw;
     text-decoration: none;

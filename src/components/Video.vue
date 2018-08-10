@@ -2,7 +2,7 @@
     <!-- <video autoplay loop muted :style = "videoStyle">
       <source :src=video type="video/mp4">
     </video> -->
-    <video-bg :sources="['static/videos/001.mp4']" img="demo/assets/bg.jpg">
+    <video-bg :sources="['static/videos/high.mp4']" img="demo/assets/bg.jpg">
         <!-- If you want to add content here, a slot is waiting! -->
     </video-bg>
 </template>
