@@ -1,11 +1,11 @@
 <template>
   <div id="buildingPage">
     <router-link class = "routerLink" to="/">TheSeaRanch</router-link>
-      <router-link to="/Buildings">
-        <div id="backIcon">
-          <simple-svg id="backIcon" :filepath="image"></simple-svg>
-        </div>
-      </router-link>
+    <router-link to="/Buildings">
+      <div id="backIcon">
+        <simple-svg id="backIcon" :filepath="image"></simple-svg>
+      </div>
+    </router-link>
     <div id="content">
       <h1>Condominium One</h1>
       <div id="buildingIcon" ref="buildingIcon">
