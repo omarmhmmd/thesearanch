@@ -158,8 +158,4 @@ export default {
     color: #000000;
   }
 
-  @font-face {
-    font-family: helvetica75;
-    src: url('./assets/fonts/helvetica75.otf');
-  }
 </style>
