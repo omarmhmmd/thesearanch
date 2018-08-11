@@ -51,7 +51,7 @@
           </span>
       </span>
       <br>
-      <img src="static/images/exhibition/map001.png" alt="">
+      <img src="static/images/exhibition/002.png" alt="">
       <div id="description">
       Distinctive architecture, uninhibited ocean views, bold supergraphics, shared open space, and meditative tranquility—these were the beginnings of the Sea Ranch, a beacon of 1960s Modernism on the Northern California coast. Through original sketches, photographs, and models, see how Sea Ranch’s idealistic principles of good design, economy of space, and harmony with nature continue to influence architecture and design.
         <br>
@@ -185,7 +185,7 @@ $largeplus: 1024px;
   #exhibitionTXT {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
     color: white;
     z-index: 10;
@@ -203,12 +203,12 @@ $largeplus: 1024px;
   }
 
   #exhibitionTXT img {
-    width: 85vw;
+    width: 65vw;
     margin-top: 3vw;
   }
 
   #description {
-    width: 90vw;
+    width: 80vw;
     font-size: 3.5vw;
     padding-top: 2vw;
   }
