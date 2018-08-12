@@ -69,7 +69,7 @@ export default {
   name: 'Home',
   data() {
     return {
-      image: '/static/button/back.svg',
+      image: 'static/button/back.svg',
       svgWidth: '900px',
       svgHeight: '677px',
       click: false
