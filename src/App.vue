@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
+    <!-- <Home></Home> -->
     <div id="fog" :style="fogUpdate"></div>
     <Video id = "videoBG"></Video>
     <div id ="footer">

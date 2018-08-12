@@ -1,5 +1,5 @@
 <template>
-  <div id="container">
+  <div id="home">
     <div id="routerLinks">
       <br>
       <router-link class = "routerLink" to="/">TheSeaRanch</router-link>
@@ -35,7 +35,7 @@
     cursor: pointer;
   }
 
-  #container {
+  #home {
     z-index: 10;
   }
 

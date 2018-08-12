@@ -1,6 +1,5 @@
 <template>
   <div id="container">
-
     <router-link class = "routerLink" to="/">TheSeaRanch</router-link>
     <div id="buildingMap">
       <div id="buildingIcon" ref="buildingIcon">
@@ -74,7 +73,7 @@
         this.$refs.buildingIcon.style.display = 'inline'
         console.log(ref)
         if (ref == 'condoOne') {
-          this.image = '/static/buildings/condoOne.svg'
+          this.image = 'static/buildings/condoOne.svg'
           if (this.$mq == 'small') {
             this.$refs.buildingIcon.style.width = '90vw'
             this.$refs.buildingIcon.style.height = 'auto'
@@ -91,7 +90,7 @@
           this.$refs.turnbull.style.display = 'none'
         }
         if (ref == 'moonraker') {
-          this.image = '/static/buildings/' + 'moonraker.svg'
+          this.image = 'static/buildings/' + 'moonraker.svg'
           this.$refs.moonraker.style.fill = this.circleHover.color
           this.$refs.moonraker.style.stroke = this.circleHover.stroke
           this.$refs.moonraker.style.strokeWidth = this.circleHover.strokeWidth
@@ -100,7 +99,7 @@
           this.$refs.turnbull.style.display = 'none'
         }
         if (ref == 'esherick') {
-          this.image = '/static/buildings/' + 'esherick.svg'
+          this.image = 'static/buildings/' + 'esherick.svg'
           this.$refs.esherick.style.fill = this.circleHover.color
           this.$refs.esherick.style.stroke = this.circleHover.stroke
           this.$refs.esherick.style.strokeWidth = this.circleHover.strokeWidth
@@ -109,7 +108,7 @@
           this.$refs.turnbull.style.display = 'none'
         }
         if (ref == 'turnbull') {
-          this.image = '/static/buildings/' + 'turnbull.svg'
+          this.image = 'static/buildings/' + 'turnbull.svg'
           this.$refs.turnbull.style.fill = this.circleHover.color
           this.$refs.turnbull.style.stroke = this.circleHover.stroke
           this.$refs.turnbull.style.strokeWidth = this.circleHover.strokeWidth
