@@ -22,9 +22,9 @@
       		c-7.1,2.7-16.6,13.7-42.2,7.3h0l-53.2-16.5c-33.6-12.1-68.7-19.5-104.4-22L4,123.5c-0.2,0-0.4-0.2-0.4-0.5v-9.7L3.2,18.1
       		c0-0.3,0.2-0.5,0.5-0.5h315.7c0.2,0,0.3-0.1,0.4-0.3c0.8-1.8,6.4-12,22-6.2C341.8,11.2,341.9,22.6,353.6,35.8z"/>
       	<router-link :style="circle" class = "routerLink" to="/CondominiumOne"><circle id = "condoOne" ref = "condoOne" @mouseover="hoverIn('condoOne')" @mouseout="hoverOut('condoOne')" cx="542.8" cy="270.6" r="6"/></router-link>
-        <circle :style="circle" id = "moonraker"ref = 'moonraker' @mouseover="hoverIn('moonraker')" @mouseout="hoverOut('moonraker')" cx="488.5" cy="182.3" r="6"/>
-        <circle :style="circle" id = "esherick" ref = 'esherick' @mouseover="hoverIn('esherick')" @mouseout="hoverOut('esherick')" cx="495.2" cy="237.2" r="6"/>
-      	<circle :style="circle" id = "turnbull" ref = 'turnbull' @mouseover="hoverIn('turnbull')" @mouseout="hoverOut('turnbull')" cx="90.4" cy="52.1" r="6"/>
+        <router-link :style="circle" class = "routerLink" to="/Moonraker"><circle :style="circle" id = "moonraker"ref = 'moonraker' @mouseover="hoverIn('moonraker')" @mouseout="hoverOut('moonraker')" cx="488.5" cy="182.3" r="6"/></router-link>
+        <router-link :style="circle" class = "routerLink" to="/Hedgerow"><circle :style="circle" id = "esherick" ref = 'esherick' @mouseover="hoverIn('esherick')" @mouseout="hoverOut('esherick')" cx="495.2" cy="237.2" r="6"/></router-link>
+      	<router-link :style="circle" class = "routerLink" to="/Cluster"><circle :style="circle" id = "turnbull" ref = 'turnbull' @mouseover="hoverIn('turnbull')" @mouseout="hoverOut('turnbull')" cx="90.4" cy="52.1" r="6"/></router-link>
       </svg>
 
     </div>

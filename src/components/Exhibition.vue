@@ -115,11 +115,12 @@ p {
   height: 100%;
   line-height: 1.5vw;
   padding-left: 4vw;
-  background-color: #7A726B;
+  /* background-color: #7A726B; */
+  background-color: none;
   font-family: Helvetica;
   position: absolute;
   top: 50%;
-  left: 75%;
+  left: 70%;
   transform: translate(-50%, -50%);
   color: white;
   width: 47.5vw;

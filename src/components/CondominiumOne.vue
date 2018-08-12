@@ -15,7 +15,7 @@
       <div id="imgContainer">
         <img :style = "imageStyle" ref = 'two' @mouseover = "indexUp('two')" @mouseout = "indexDown('two')" id = "two" src="static/images/condoOne/002.png" alt="">
         <img :style = "imageStyle" ref = 'one' @mouseover = "indexUp('one')" @mouseout = "indexDown('one')" id = "one" src="static/images/condoOne/001.png" alt="">
-        <img :style = "imageStyle" ref = 'three' @mouseover = "indexUp('three')" @mouseout = "indexDown('three')" id = "three" src="static/images/condoOne/002.png" alt="">
+        <img :style = "imageStyle" ref = 'three' @mouseover = "indexUp('three')" @mouseout = "indexDown('three')" id = "three" src="static/images/condoOne/003.jpg" alt="">
       </div>
     </div>
   </div>
@@ -28,7 +28,7 @@
       return {
         image: 'static/button/back.svg',
         buildingImage: 'static/buildings/condoOne.svg',
-        buildingTxt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        buildingTxt: 'Condominum One is dominated by a single roof plane rising toward the crest of a knoll. Sidewalls drop like cliffs from its irregular edges, themselves further modulated by bays, projections, and hollows as they reach to the ground. The volume they make is like a large, rectilinear landform, a wooden escarpment with edges that move back and forth like the boundaries of a cove.',
         imageStyle : {
           zIndex: ''
         },
@@ -44,24 +44,24 @@
           this.$refs.one.style.zIndex = '99'
           this.$refs.two.style.zIndex = '98'
           this.$refs.three.style.zIndex = '97'
-          this.buildingTxt = '<span style = "font-weight: bold">MLTW(Moore,Lyndon,Turnbull, and Whitaker)</span><br> Condominium One <br> 1963-67 Ink on Yellow Trace 24 x 36 in'
+          this.buildingTxt = '<span style = "font-weight: bold">MLTW(Moore,Lyndon,Turnbull, and Whitaker)</span><br> Sketch for Condominium at The Sea Ranch, California <br> 1964 Graphite on Tracing Paper13 5/8 in. x 16 1/4 in.'
         }
         if (ref == 'two') {
           this.$refs.two.style.zIndex = '99'
           this.$refs.one.style.zIndex = '98'
           this.$refs.three.style.zIndex = '97'
-          this.buildingTxt = '<span style = "font-weight: bold">MLTW</span><br> Condominium One <br> 1965 Ink on White Trace 24 x 36 in'
+          this.buildingTxt = '<span style = "font-weight: bold">MLTW(Moore,Lyndon,Turnbull, and Whitaker)</span><br> Sea Ranch Condo 1, Sketch <br> 1963 Graphite on Tracing Paper 17 x 34 1/8 in.'
         }
         if (ref == 'three') {
           this.$refs.three.style.zIndex = '99'
           this.$refs.one.style.zIndex = '98'
           this.$refs.two.style.zIndex = '97'
-          this.buildingTxt = '<span style = "font-weight: bold">MLTW(Moore,Lyndon,Turnbull, and Whitaker)</span><br> Condominium One <br> 1963-67 Ink on Yellow Trace 24 x 36 in'
+          this.buildingTxt = '<span style = "font-weight: bold">MLTW(Moore,Lyndon,Turnbull, and Whitaker)</span><br> Condominium One, Site Plan <br> 1965 Ink on Paper, 8.60 × 11 in.'
         }
       },
       indexDown() {
         this.imageStyle.zIndex = '0'
-        this.buildingTxt = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        this.buildingTxt = 'Condominum One is dominated by a single roof plane rising toward the crest of a knoll. Sidewalls drop like cliffs from its irregular edges, themselves further modulated by bays, projections, and hollows as they reach to the ground. The volume they make is like a large, rectilinear landform, a wooden escarpment with edges that move back and forth like the boundaries of a cove.'
       }
 
     }
@@ -129,7 +129,7 @@
     position: absolute;
     color: white;
     width: 32.5%;
-    line-height: 1.4vw;
+    line-height: 1.45vw;
     left: $left;
     top:47.5%;
     font-size: 1.15vw;
@@ -158,7 +158,9 @@
   }
 
   #three {
+    top: -3vw;
     left: 10vw;
+    width: 35vw;
   }
 
 </style>
@@ -250,8 +252,9 @@
     }
 
     #three {
-      left: 7vw;
-      top: 30vw;
+      left: 12vw;
+      top: 15vw;
+      width: 55vw;
     }
 
   }
