@@ -28,7 +28,7 @@
       return {
         image: 'static/button/back.svg',
         buildingImage: 'static/buildings/turnbull.svg',
-        buildingTxt: 'The Cluster Houses were developed by Oceanic Properties as a second round of buildings after the Condominium One and the Hedgerow Houses that shared a common purpose. The deatched units, built in two places across the highway from the Knipp-Stengel barn, are closely related to each other, but do not have the common walls and intermingled ownership of a condominium. One group along White Fir Wood surrounds a meadowed bowl leading gently down toward the barn, the other, clustered around Madrone Meadow, rides high on a forward-projecting plateau along a rising ridge of the hills.',
+        buildingTxt: 'The Cluster Houses were developed by Oceanic Properties as a second round of buildings after the Condominium One and the Hedgerow Houses that shared a common purpose. The detatched units, built in two places across the highway from the Knipp-Stengel barn, are closely related to each other, but do not have the common walls and intermingled ownership of a condominium. One group along White Fir Wood surrounds a meadowed bowl leading gently down toward the barn, the other, clustered around Madrone Meadow, rides high on a forward-projecting plateau along a rising ridge of the hills.',
         imageStyle : {
           zIndex: ''
         },
