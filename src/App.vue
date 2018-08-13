@@ -3,7 +3,12 @@
     <router-view></router-view>
     <!-- <Home></Home> -->
     <div id="fog" :style="fogUpdate"></div>
-    <video-bg id = "videoBG":sources="['static/videos/high.mp4']" img="demo/assets/bg.jpg"></video-bg>
+    <mq-layout mq="medium+">
+      <video-bg id = "videoBG":sources="['static/videos/high.mp4']" img="static/videos/high.png"></video-bg>
+    </mq-layout>
+    <mq-layout mq="small">
+      <video-bg id = "videoBG":sources="['static/videos/high.png']" img="static/videos/high.png"></video-bg>
+    </mq-layout>
     <div id ="footer">
       <div id="location">
         {{ weather }}° | {{ geoLocation }}
@@ -49,29 +54,31 @@ export default {
     var temp = this;
     axios.get('https://api.wunderground.com/api/89c63e6a34bf4afb/geolookup/conditions/q/zmw:95497.1.99999.json')
       .then(response => {
+        temp.vis = response.data.current_observation.visibility_mi;
         temp.weather = response.data.current_observation.temp_f;
-        console.log("weather " + temp.weather);
-        var tempOpacity = temp.weather;
+        console.log("Visibility " + temp.weather);
+        var tempOpacity = temp.vis;
         temp.readTemp(tempOpacity);
       })
 
     setInterval(function(){
       axios.get('https://api.wunderground.com/api/89c63e6a34bf4afb/geolookup/conditions/q/zmw:95497.1.99999.json')
         .then(response => {
+          temp.vis = response.data.current_observation.visibility_mi;
           temp.weather = response.data.current_observation.temp_f;
           console.log("weather " + temp.weather);
-          var tempOpacity = temp.weather;
+          var tempOpacity = temp.vis;
           temp.readTemp(tempOpacity);
         })
      }, 900000);
   },
   methods: {
     readTemp(tempOpacity) {
-      if (tempOpacity <= 69) {
-        tempOpacity = (tempOpacity / -90) + 1.4;
+      if (tempOpacity > 3.5) {
+        tempOpacity = 1 - ((tempOpacity - 6.5) / 10);
       }
-      else if (tempOpacity > 69) {
-        tempOpacity = (tempOpacity / -60) + 1.4;
+      else if (tempOpacity <= 3.5) {
+        tempOpacity = 1 - ((3.5 - 2.5) / 10);
       }
       this.fogUpdate.background = 'rgba(122, 115, 107,' + tempOpacity + ')';
       console.log("temp from function should update bg " + tempOpacity);
