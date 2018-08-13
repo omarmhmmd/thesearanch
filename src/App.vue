@@ -55,20 +55,24 @@ export default {
         temp.readTemp(tempOpacity);
       })
 
-    /*** TIMED FUNCTION ***/
-    // setInterval(function(){
-    //   axios.get('https://api.wunderground.com/api/89c63e6a34bf4afb/geolookup/conditions/q/zmw:95497.1.99999.json')
-    //     .then(response => {
-    //       temp.weather = response.data.current_observation.temp_f;
-    //       console.log("weather " + temp.weather);
-    //       var tempOpacity = temp.weather;
-    //       temp.readTemp(tempOpacity);
-    //     })
-    //  }, 500000);
+    setInterval(function(){
+      axios.get('https://api.wunderground.com/api/89c63e6a34bf4afb/geolookup/conditions/q/zmw:95497.1.99999.json')
+        .then(response => {
+          temp.weather = response.data.current_observation.temp_f;
+          console.log("weather " + temp.weather);
+          var tempOpacity = temp.weather;
+          temp.readTemp(tempOpacity);
+        })
+     }, 900000);
   },
   methods: {
     readTemp(tempOpacity) {
-      tempOpacity = (tempOpacity / -100) + 1.375;
+      if (tempOpacity <= 69) {
+        tempOpacity = (tempOpacity / -90) + 1.4;
+      }
+      else if (tempOpacity > 69) {
+        tempOpacity = (tempOpacity / -60) + 1.4;
+      }
       this.fogUpdate.background = 'rgba(122, 115, 107,' + tempOpacity + ')';
       console.log("temp from function should update bg " + tempOpacity);
     },
@@ -97,6 +101,7 @@ export default {
   width: 8.5%;
   left: 3.5%;
   top: 90%;
+  z-index: 100;
 }
 
 #location {

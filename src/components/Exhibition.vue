@@ -184,8 +184,8 @@ $largeplus: 1024px;
 
   #exhibitionTXT {
     position: absolute;
-    top: 50%;
-    left: 52.5%;
+    top: 46%;
+    left: 55%;
     transform: translate(-50%, -50%);
     color: white;
     z-index: 10;
@@ -213,8 +213,9 @@ $largeplus: 1024px;
 
   #description {
     width: 80vw;
-    font-size: 3.5vw;
+    font-size: 4vw;
     padding-top: 2vw;
+    line-height: 4.5vw;
   }
 
   #exhibitionTXT a {

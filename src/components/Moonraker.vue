@@ -1,6 +1,11 @@
 <template>
   <div id="buildingPage">
-    <router-link class = "routerLink" to="/">TheSeaRanch</router-link>
+    <mq-layout mq="medium+">
+      <router-link class = "routerLink" to="/">TheSeaRanch</router-link>
+    </mq-layout>
+    <mq-layout mq="small">
+      <router-link class = "routerLink" to="/">Moonraker</router-link>
+    </mq-layout>
     <router-link to="/Buildings">
       <div id="backIcon">
         <simple-svg id="backIcon" :filepath="image"></simple-svg>
@@ -178,7 +183,7 @@
 
     .routerLink {
       font-size: 8vw;
-      left: 40%;
+      left: 50%;
       top: 5%;
     }
 
@@ -198,12 +203,7 @@
     }
 
     h1 {
-      position: absolute;
-      color: white;
-      font-size: 7vw;
-      top: 10.5%;
-      left:7.5%;
-      z-index: 100;
+      display: none;
     }
 
     #buildingIcon {
@@ -220,13 +220,13 @@
     #buildingText {
       z-index: 10;
       position: absolute;
-      top: 31.5%;
+      top: 27%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
-      width: 84%;
-      line-height: 3.5vw;
-      font-size: 3vw;
+      width: 90%;
+      line-height: 4.5vw;
+      font-size: 3.25vw;
     }
 
     #imgContainer {
@@ -239,22 +239,22 @@
 
     img {
       position: absolute;
-      width: 70vw;
+      width: 75vw;
     }
 
     #one {
-      left: 25vw;
+      left: 20vw;
     }
 
     #two {
-      left: 15vw;
+      left: 10vw;
       top: -10vw;
     }
 
     #three {
       left: 12vw;
-      top: 15vw;
-      width: 55vw;
+      top: 12vw;
+      width: 64vw;
     }
 
   }

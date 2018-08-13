@@ -2,7 +2,7 @@
   <div id="home">
     <div id="routerLinks">
       <br>
-      <router-link class = "routerLink" to="/">TheRanch</router-link>
+      <router-link class = "routerLink" to="/">TheSeaRanch</router-link>
       <br>
       <router-link class = "routerLink" to="/Buildings">TheBuildings</router-link>
       <br>
@@ -71,6 +71,11 @@
   @media screen and (max-width: $small) {
     .routerLink {
       font-size: 8vw;
+      line-height: 9vw;
+    }
+
+    #routerLinks {
+
     }
   }
 
