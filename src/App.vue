@@ -3,7 +3,7 @@
     <router-view></router-view>
     <!-- <Home></Home> -->
     <div id="fog" :style="fogUpdate"></div>
-    <Video id = "videoBG"></Video>
+    <video-bg id = "videoBG":sources="['static/videos/high.mp4']" img="demo/assets/bg.jpg"></video-bg>
     <div id ="footer">
       <div id="location">
         {{ weather }}° | {{ geoLocation }}
