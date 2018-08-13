@@ -2,7 +2,7 @@
   <div id="home">
     <div id="routerLinks">
       <br>
-      <router-link class = "routerLink" to="/">TheSeaRanch</router-link>
+      <router-link class = "routerLink" to="/">TheRanch</router-link>
       <br>
       <router-link class = "routerLink" to="/Buildings">TheBuildings</router-link>
       <br>
