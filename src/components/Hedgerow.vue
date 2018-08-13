@@ -201,7 +201,7 @@
       position: absolute;
       color: white;
       font-size: 8.75vw;
-      top: 12.5%;
+      top: 10.5%;
       left:7.5%;
       z-index: 100;
     }
@@ -248,12 +248,12 @@
 
     #two {
       left: 15vw;
-      top: -10vw;
+      top: -6vw;
     }
 
     #three {
       left: 12vw;
-      top: 15vw;
+      top: 12vw;
       width: 55vw;
     }
 

@@ -201,7 +201,7 @@
       position: absolute;
       color: white;
       font-size: 7vw;
-      top: 12.5%;
+      top: 10.5%;
       left:7.5%;
       z-index: 100;
     }

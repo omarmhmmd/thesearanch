@@ -41,10 +41,9 @@
 
     <div id="exhibitionTXT">
       <span id="exhibitionTxtHead">
-          <p>TheSeaRanch</p>
-          Architecture,<br>
-          Environment,
-          <br>and Idealism
+          TheSeaRanch
+          <br>
+          <span id = "title">Architecture, Environment, and Idealism</span>
           <br>
           <span id = "exhibitionTxtDate">
             December 22, 2018–April 29, 2019
@@ -145,7 +144,7 @@ p {
 }
 
 #exhibitionBG img {
-  width: 70%;
+  width: 91%;
   margin-top: 2.75%;
 }
 
@@ -186,7 +185,7 @@ $largeplus: 1024px;
   #exhibitionTXT {
     position: absolute;
     top: 50%;
-    left: 55%;
+    left: 52.5%;
     transform: translate(-50%, -50%);
     color: white;
     z-index: 10;
@@ -194,8 +193,12 @@ $largeplus: 1024px;
 
   #exhibitionTxtHead {
     font-weight: bold;
-    font-size: 5vw;
-    line-height: normal;
+    font-size: 7vw;
+    line-height: 3.5vw;
+  }
+
+  #title {
+    font-size: 4.125vw;
   }
 
   #exhibitionTxtDate {

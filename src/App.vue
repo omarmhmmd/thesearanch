@@ -131,8 +131,8 @@ export default {
     }
 
     #location {
-      font-size: 3.25vw;
-      left: 55.5%;
+      font-size: 3.75vw;
+      left: 50%;
       top: 93.5%;
     }
   }
