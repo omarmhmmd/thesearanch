@@ -52,7 +52,7 @@ export default {
   },
   mounted() {
     var temp = this;
-    axios.get('http://api.openweathermap.org/data/2.5/weather?zip=95480,us&APPID=bd75c5929036958e10cf060edef30b48')
+    axios.get('https://api.openweathermap.org/data/2.5/weather?zip=95480,us&APPID=bd75c5929036958e10cf060edef30b48')
       .then(response => {
         temp.vis = response.data.clouds.all;
         console.log(temp.vis);
