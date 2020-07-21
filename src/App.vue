@@ -40,7 +40,7 @@ export default {
     return {
       isMuted: false,
       title: 'The Sea Ranch',
-      weather: null,
+      weather: '57',
       geoLocation: '38.72° N 123.45° W',
       fogUpdate: {
         background: ''
@@ -52,36 +52,30 @@ export default {
   },
   mounted() {
     var temp = this;
-    axios.get('https://api.wunderground.com/api/89c63e6a34bf4afb/geolookup/conditions/q/zmw:95497.1.99999.json')
+    axios.get('http://api.openweathermap.org/data/2.5/weather?zip=95480,us&APPID=bd75c5929036958e10cf060edef30b48')
       .then(response => {
-        temp.vis = response.data.current_observation.visibility_mi;
-        temp.weather = response.data.current_observation.temp_f;
-        console.log("Visibility " + temp.weather);
-        var tempOpacity = temp.vis;
-        temp.readTemp(tempOpacity);
+        temp.vis = response.data.clouds.all;
+        console.log(temp.vis);
+        var tempVis = temp.vis;
+        temp.readTemp(tempVis);
       })
 
-    setInterval(function(){
-      axios.get('https://api.wunderground.com/api/89c63e6a34bf4afb/geolookup/conditions/q/zmw:95497.1.99999.json')
-        .then(response => {
-          temp.vis = response.data.current_observation.visibility_mi;
-          temp.weather = response.data.current_observation.temp_f;
-          console.log("weather " + temp.weather);
-          var tempOpacity = temp.vis;
-          temp.readTemp(tempOpacity);
-        })
-     }, 900000);
+    // setInterval(function(){
+    //   axios.get('https://api.wunderground.com/api/89c63e6a34bf4afb/geolookup/conditions/q/zmw:95497.1.99999.json')
+    //     .then(response => {
+    //       temp.vis = response.data.current_observation.visibility_mi;
+    //       temp.weather = response.data.current_observation.temp_f;
+    //       console.log("weather " + temp.weather);
+    //       var tempOpacity = temp.vis;
+    //       temp.readTemp(tempOpacity);
+    //     })
+    //  }, 900000);
   },
   methods: {
-    readTemp(tempOpacity) {
-      if (tempOpacity > 3.5) {
-        tempOpacity = 1 - ((tempOpacity - 6.5) / 10);
-      }
-      else if (tempOpacity <= 3.5) {
-        tempOpacity = 1 - ((3.5 - 2.5) / 10);
-      }
-      this.fogUpdate.background = 'rgba(122, 115, 107,' + tempOpacity + ')';
-      console.log("temp from function should update bg " + tempOpacity);
+    readTemp(tempVis) {
+      var fog = (100 - tempVis) / 100;
+      this.fogUpdate.background = 'rgba(122, 115, 107,' + fog + ')';
+      console.log("temp from function should update bg " + fog);
     },
   }
 }

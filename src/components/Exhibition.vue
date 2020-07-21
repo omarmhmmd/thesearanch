@@ -26,7 +26,7 @@
           explored at the Sea Ranch, along with the now-iconic graphics, resonated globally and continue to influence architecture and design today.
           <br>
           <br>
-          <a target="_blank" href="https://www.sfmoma.org/exhibition/donald-judd-specific-furniture/">Get Tickets Here</a>
+          <a target="_blank" href="https://www.sfmoma.org/exhibition/sea-ranch/">Get Tickets Here</a>
         </div>
       </div>
     </div>
