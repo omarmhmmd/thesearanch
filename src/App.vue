@@ -40,7 +40,7 @@ export default {
     return {
       isMuted: false,
       title: 'The Sea Ranch',
-      weather: '57',
+      weather: '',
       geoLocation: '38.72° N 123.45° W',
       fogUpdate: {
         background: ''
@@ -55,7 +55,10 @@ export default {
     axios.get('https://api.openweathermap.org/data/2.5/weather?zip=95480,us&APPID=bd75c5929036958e10cf060edef30b48')
       .then(response => {
         temp.vis = response.data.clouds.all;
-        console.log(temp.vis);
+        // console.log(temp.vis);
+        temp.tempK = response.data.main.temp;
+        // console.log(temp.tempK);
+        this.weather = Math.round((temp.tempK - 273.15) * 9/5 + 32);
         var tempVis = temp.vis;
         temp.readTemp(tempVis);
       })
@@ -75,7 +78,7 @@ export default {
     readTemp(tempVis) {
       var fog = (100 - tempVis) / 100;
       this.fogUpdate.background = 'rgba(122, 115, 107,' + fog + ')';
-      console.log("temp from function should update bg " + fog);
+      // console.log("temp from function should update bg " + fog);
     },
   }
 }
